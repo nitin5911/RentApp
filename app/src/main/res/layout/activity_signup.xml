@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightGray"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/supleftarrowBtnid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/signuplogoid"
+        app:layout_constraintRight_toLeftOf="@+id/signuplogoid"
+        android:src="@drawable/ic_arrow_back_white_24dp"/>
+    <ImageView
+        android:id="@+id/signuplogoid"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/rent_it_logo"
+        app:layout_constraintLeft_toRightOf="@+id/supleftarrowBtnid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/signupcardid"
+        app:layout_constraintTop_toBottomOf="@+id/supleftarrowBtnid" />
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/signuplogoid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/signupcardid" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/signuptextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textfnameEtxtid"
+                />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter First Name"
+            android:id="@+id/textfnameEtxtid"
+            app:layout_constraintTop_toBottomOf="@+id/signuptextid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textlnameEtxtid"
+            android:textColorHint="@color/black">
+            <EditText
+                android:id="@+id/supfnameEtxtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:drawablePadding="@dimen/_20dp"
+                android:drawableStart="@mipmap/name"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:drawableLeft="@mipmap/name" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textfnameEtxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textemailEtxtid"
+            android:hint="Enter Last Name"
+            android:id="@+id/textlnameEtxtid"
+            android:textColorHint="@color/black">
+            <EditText
+                android:id="@+id/suplnameEtxtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:drawablePadding="@dimen/_20dp"
+                android:drawableStart="@mipmap/name"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:drawableLeft="@mipmap/name" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:id="@+id/textemailEtxtid"
+            app:layout_constraintTop_toBottomOf="@+id/textlnameEtxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textphoneEtxtid"
+            android:textColorHint="@color/black">
+            <EditText
+                android:id="@+id/supemailEtxtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:drawablePadding="@dimen/_20dp"
+                android:drawableStart="@mipmap/password"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:drawableLeft="@mipmap/email" />
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Phone Number"
+                android:id="@+id/textphoneEtxtid"
+                app:layout_constraintTop_toBottomOf="@+id/textemailEtxtid"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textpassEtxtid"
+                android:textColorHint="@color/black">
+                <EditText
+                    android:id="@+id/supphoneEtxtid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue"
+                    android:drawablePadding="@dimen/_20dp"
+                    android:drawableStart="@mipmap/password"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_16sp"
+                    android:drawableLeft="@mipmap/email" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/textpassEtxtid"
+                app:layout_constraintTop_toBottomOf="@+id/textphoneEtxtid"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textcpassEtxtid"
+                android:textColorHint="@color/black">
+            <EditText
+                android:id="@+id/suppassEtxtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:backgroundTint="@color/blue"
+                android:drawablePadding="@dimen/_20dp"
+                android:drawableStart="@mipmap/password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/blue"
+                android:textSize="@dimen/_16sp"
+                android:drawableLeft="@mipmap/email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:id="@+id/textcpassEtxtid"
+            app:layout_constraintTop_toBottomOf="@+id/textpassEtxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/supsubmitbtnid"
+            android:textColorHint="@color/black">
+            <EditText
+                android:id="@+id/supcpassEtxtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:drawablePadding="@dimen/_20dp"
+                android:drawableStart="@mipmap/password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:drawableLeft="@mipmap/email" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/supsubmitbtnid"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/textcpassEtxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/button_red"
+            android:gravity="center"
+            android:text="SIGN UP"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sp" />
+        </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

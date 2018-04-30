@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "4455351498",
+    "firebase_url": "https://rentitproject-bfcdf.firebaseio.com",
+    "project_id": "rentitproject-bfcdf",
+    "storage_bucket": "rentitproject-bfcdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4455351498:android:7bf5f2dd3d3db0ea",
+        "android_client_info": {
+          "package_name": "com.example.chetanp.rentitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4455351498-6bevlhvcj1o2lnrvuu6kfbqm07idlosl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chetanp.rentitapp",
+            "certificate_hash": "6549231d6852112819be404808ebf895569cacb7"
+          }
+        },
+        {
+          "client_id": "4455351498-8a7fgblgmfn03vj2mt0dtqm0kcl2i2ut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyvK2XpvJqoMLFfKR3-En0mh6jiyWNYbI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4455351498-8a7fgblgmfn03vj2mt0dtqm0kcl2i2ut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

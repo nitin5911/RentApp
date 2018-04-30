@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_post_a_add"
+            android:icon="@drawable/post_add"
+            android:title="Post A Add" />
+        <item
+            android:id="@+id/nav_my_adds"
+            android:icon="@drawable/my_adds"
+            android:title="My Adds" />
+        <item
+            android:id="@+id/nav_my_rented"
+            android:icon="@drawable/my_rented"
+            android:title="My Rented" />
+        <item
+            android:id="@+id/nav_my_bookings"
+            android:icon="@drawable/my_bookings"
+            android:title="My Bookings"/>
+        <item
+            android:id="@+id/nav_favourite_adds"
+            android:icon="@drawable/favourite_adds"
+            android:title="Favourite Adds" />
+        <item
+            android:id="@+id/nav_invoice"
+            android:icon="@drawable/invoice"
+            android:title="Invoice" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/rate_us"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

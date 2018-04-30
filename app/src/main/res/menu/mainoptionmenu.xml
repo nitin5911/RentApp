@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_notification"
+        android:orderInCategory="100"
+        android:icon="@drawable/bell_s"
+        android:title="notification"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_addCart"
+        android:orderInCategory="100"
+        android:title="Add to Cart"
+        android:icon="@drawable/add_to_cart"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_about_us"
+        android:orderInCategory="100"
+        android:title="About Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_terms_conditions"
+        android:orderInCategory="100"
+        android:title="Terms And Conditions"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="Faq"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="Login"
+        app:showAsAction="never" />
+</menu>
